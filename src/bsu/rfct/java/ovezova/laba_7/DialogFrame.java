@@ -1,19 +1,13 @@
 package bsu.rfct.java.ovezova.laba_7;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 public class DialogFrame extends JFrame {
     private static final int INCOMING_AREA_DEFAULT_ROWS = 10;
     private static final int OUTGOING_AREA_DEFAULT_ROWS = 5;

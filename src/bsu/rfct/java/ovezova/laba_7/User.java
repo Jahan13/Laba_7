@@ -1,8 +1,5 @@
 package bsu.rfct.java.ovezova.laba_7;
 
-
-import java.util.ArrayList;
-
 public class User {
     // private ArrayList<User> UserInfo = new ArrayList<>(10);
     private String name;
