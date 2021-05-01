@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import javax.swing.*;
+
 public class Main extends JFrame {
     private static final String FRAME_TITLE = "Клиент мгновенных сообщений";
     private static final int FRAME_MINIMUM_WIDTH = 500;
@@ -28,6 +29,7 @@ public class Main extends JFrame {
     private final JTextArea textAreaIncoming;
     private final JTextArea textAreaOutgoing;
     private ArrayList<User> UserInfo = new ArrayList<>(10);
+
     public Main() {
         super(FRAME_TITLE);
         setMinimumSize(new Dimension(FRAME_MINIMUM_WIDTH, FRAME_MINIMUM_HEIGHT));
@@ -58,6 +60,7 @@ public class Main extends JFrame {
                 sendMessage();
             }
         });
+
         // Компоновка элементов панели "Сообщение"
         final GroupLayout layout2 = new GroupLayout(messagePanel);
         messagePanel.setLayout(layout2);
@@ -104,6 +107,7 @@ public class Main extends JFrame {
                 .addContainerGap());
         // Создание и запуск потока-обработчика запросов
         new Thread(new Runnable() {
+
             @Override
             public void run() {
                 try { //создание серверного сокета
@@ -138,6 +142,7 @@ public class Main extends JFrame {
             }
         }).start();
     }
+
     private void sendMessage() {
         try {
             // Получаем необходимые параметры

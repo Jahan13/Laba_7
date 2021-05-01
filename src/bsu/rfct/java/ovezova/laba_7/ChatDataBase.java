@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
+
 /*Класс - база данных пользователей, изначально хранится в текстовом файле*/
 public class ChatDataBase {
     private ArrayList<User> users = new ArrayList<>(10);
